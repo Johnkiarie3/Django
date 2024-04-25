@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6a062f-dd20-403d-80a6-c67c695f7d21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/djangoProject3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject3/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject3/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject3/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject3/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject3/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/migrations/0002_client_payment_client_quantity_client_title.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/about_us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/dashbase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/templates/updateClient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +111,7 @@
       <workItem from="1713768702299" duration="3837000" />
       <workItem from="1713845389927" duration="1931000" />
       <workItem from="1713854767456" duration="2814000" />
+      <workItem from="1714034613745" duration="1231000" />
     </task>
     <servers />
   </component>
