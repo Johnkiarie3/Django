@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .navbar{
+        width:60px;
+        height:100%;
+        padding:10px;
+    }
+    .navbar li
+    .navbar-Nav li a {
+        text-decoration: none;
+        color:white;
+    }
+    .centered-form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .centered-form2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+</style>
+</head>
+<body>
+<div class="container-fluid bg-dark justify-content-center">
+    <h1 style="text-align: center; color:white;">Welcome to KLENZA Dashboard</h1>
+</div>
+<br>
+<nav class="navbar bg-dark" >
+    <div class="col-md-2">
+        <div class="collapse navbar-collapse" id="navbar-Nav">
+            <ul class="navbar-Nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'dashboard' %}">Admissions</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

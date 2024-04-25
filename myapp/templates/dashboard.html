@@ -1,0 +1,102 @@
+{% extends 'dashbase.html' %}
+{% block content %}
+    <br><div class="container-fluid row p-5">
+    <div class="col-md-5">
+        <form method="POST" action="/addClient" style="background-color: burlywood" class=" p-5 ">
+            {% csrf_token %}
+            <h3><u><b>REGISTER HERE</b></u></h3>
+            <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control"  name="Fullname" id="name" placeholder=" Enter Your Fullname" required>
+            </div>
+            <br>
+
+            <div class="form-group col-md-6">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" name="Email" id="Email" placeholder="Enter your Email" required>
+            </div>
+            <br>
+
+            <div class="form-group col-md-3">
+                <label for=" age">Age</label>
+                <input type="number" class="form-control" name="Age" id="age" placeholder="Age" required>
+            </div>
+            <br>
+
+            <div class="form-group col-md-2">
+               <label for="services">Services</label> <br>
+               <input type="number" id="services" name="services" min="0" max="10" value="1" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Title</label>
+
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title1" value="Mr.">
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title1" value="Mrs.">
+
+                <label for="PhD">PhD</label>
+                <input type="radio" id="PhD" name="title1" value="PhD">
+            </div>
+            <br>
+
+            <div>
+                <label for="payment">Payment</label> <br>
+                <select id="payment" name="payment">
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Mpesa">Mpesa</option>
+                </select>
+            </div>
+            <br>
+
+            <br>
+
+            <div>
+                {% csrf_token %}
+               <button class="bg-success">REGISTER</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-md-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Services</th>
+                    <th>Title</th>
+                    <th>Payment</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            {% for Client in data %}
+                <tr>
+                    <td>{{ Client.name }}</td>
+                    <td>{{ Client.email }}</td>
+                    <td>{{ Client.age }}</td>
+                    <td>{{ Client.quantity }}</td>
+                    <td>{{ Client.title }}</td>
+                    <td>{{ Client.payment }}</td>
+                    <td>
+                        <a href="/editClient/{{ Client.id }}" type="button" class="btn btn-outline-success">Edit</a>
+                    </td>
+                    <td>
+                        <a href="/deleteClient/{{ Client.id }}" type="button" class="btn btn-outline-danger">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

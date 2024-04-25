@@ -1,0 +1,72 @@
+{% extends 'dashbase.html' %}
+{% block content %}
+
+
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                   <h3 style="align-content: center"><u>UPDATES</u></h3>
+                        <form method="POST" action="/updateClient/ {{ data.id }}"  style="background-color: burlywood" class=" p-5 ">
+                            {% csrf_token %}
+                            <div class="form-group col-md-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control"  name="Fullname" value="{{ data.name }}" id="name" placeholder=" Enter Your Fullname" required>
+                            </div>
+                            <br>
+
+                            <div class="form-group col-md-8">
+                                <label for="Email">Email</label>
+                                <input type="email" class="form-control" name="Email" id="Email" value="{{ data.email }}" placeholder="Enter your Email" required>
+                            </div>
+                            <br>
+
+                            <div class="form-group col-md-4">
+                                <label for=" age">Age</label>
+                                <input type="number" class="form-control" name="Age" id="age" value="{{ data.age }}" placeholder="Age" required>
+                            </div>
+                            <br>
+
+                            <div class="form-group col-md-4">
+                               <label for="services">Services</label> <br>
+                               <input type="number" id="services" name="services" value="{{ data.quantity }}" min="0" max="10" placeholder="1" required>
+                            </div>
+                            <br>
+
+                            <div>
+                                Selected Title:{{ data.title }}
+                                <label>Title</label>
+
+                                <label for="Mr.">Mr.</label>
+                                <input type="radio" id="Mr." name="title1" value="Mr.">
+
+                                <label for="Mrs.">Mrs.</label>
+                                <input type="radio" id="Mrs." name="title2" value="Mrs.">
+
+                                <label for="PhD">PhD</label>
+                                <input type="radio" id="PhD" name="title3" value="PhD">
+                            </div>
+                            <br>
+
+                            <div>
+                                <label for="payment">Payment</label> <br>
+                                <select id="payment" name="payment">
+                                    <option value="Visa">Visa</option>
+                                    <option value="Mastercard">Mastercard</option>
+                                    <option value="Mpesa">Mpesa</option>
+                                </select>
+                            </div>
+                             <br>
+
+                            <div>
+                                {% csrf_token %}
+                               <button class="bg-success">REGISTER</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
