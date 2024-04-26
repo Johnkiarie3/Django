@@ -14,7 +14,6 @@ class Client(models.Model):
     email=models.EmailField()
     age= models.IntegerField()
     quantity= models.IntegerField()
-    title= models.CharField(max_length=100)
     payment= models.CharField(max_length=250)
 
 # Create your models here.

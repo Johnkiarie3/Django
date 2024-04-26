@@ -1,4 +1,9 @@
 {% extends 'dashbase.html' %}
+
+{% block title %}
+    Dashboard Page
+{% endblock %}
+
 {% block content %}
     <br><div class="container-fluid row p-5">
     <div class="col-md-5">
@@ -30,20 +35,6 @@
             <br>
 
             <div>
-                <label>Title</label>
-
-                <label for="Mr.">Mr.</label>
-                <input type="radio" id="Mr." name="title1" value="Mr.">
-
-                <label for="Mrs.">Mrs.</label>
-                <input type="radio" id="Mrs." name="title1" value="Mrs.">
-
-                <label for="PhD">PhD</label>
-                <input type="radio" id="PhD" name="title1" value="PhD">
-            </div>
-            <br>
-
-            <div>
                 <label for="payment">Payment</label> <br>
                 <select id="payment" name="payment">
                     <option value="Visa">Visa</option>
@@ -71,7 +62,6 @@
                     <th>Email</th>
                     <th>Age</th>
                     <th>Services</th>
-                    <th>Title</th>
                     <th>Payment</th>
                     <th>Edit</th>
                     <th>Delete</th>
@@ -85,7 +75,6 @@
                     <td>{{ Client.email }}</td>
                     <td>{{ Client.age }}</td>
                     <td>{{ Client.quantity }}</td>
-                    <td>{{ Client.title }}</td>
                     <td>{{ Client.payment }}</td>
                     <td>
                         <a href="/editClient/{{ Client.id }}" type="button" class="btn btn-outline-success">Edit</a>

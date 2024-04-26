@@ -1,7 +1,9 @@
 {% extends 'dashbase.html' %}
+
+{% block title %}
+    Updating  Dashboard
+{% endblock %}
 {% block content %}
-
-
 <div class="container">
     <div class="row centered-form">
         <div class="col-md-6">
@@ -31,21 +33,6 @@
                             <div class="form-group col-md-4">
                                <label for="services">Services</label> <br>
                                <input type="number" id="services" name="services" value="{{ data.quantity }}" min="0" max="10" placeholder="1" required>
-                            </div>
-                            <br>
-
-                            <div>
-                                Selected Title:{{ data.title }}
-                                <label>Title</label>
-
-                                <label for="Mr.">Mr.</label>
-                                <input type="radio" id="Mr." name="title1" value="Mr.">
-
-                                <label for="Mrs.">Mrs.</label>
-                                <input type="radio" id="Mrs." name="title2" value="Mrs.">
-
-                                <label for="PhD">PhD</label>
-                                <input type="radio" id="PhD" name="title3" value="PhD">
                             </div>
                             <br>
 

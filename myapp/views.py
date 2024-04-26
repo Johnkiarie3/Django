@@ -41,10 +41,9 @@ def addClient(request):
         email=request.POST.get('Email')
         age=request.POST.get('Age')
         quantity=request.POST.get('services')
-        mytitle='Mrs'
         payment=request.POST.get('payment')
 
-    obj1=Client(name=name, email=email, age=age, quantity=quantity, title=mytitle, payment=payment)
+    obj1=Client(name=name, email=email, age=age, quantity=quantity, payment=payment)
     obj1.save()
 
     mydata = Client.objects.all();
@@ -62,7 +61,6 @@ def updateClient(request,id):
         email=request.POST.get('Email')
         age=request.POST.get('Age')
         quantity=request.POST.get('services')
-        mytitle=request.POST.get('title1')
         payment=request.POST.get('payment')
 
         #modifying the client details based on the client id given
@@ -71,7 +69,6 @@ def updateClient(request,id):
         editClient.email=email
         editClient.age=age
         editClient.quantity=quantity
-        editClient.title=mytitle
         editClient.payment=payment
         editClient.save()
     return redirect('/dashboard')
